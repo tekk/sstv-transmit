@@ -1,0 +1,5 @@
+PySSTV
+Pillow
+flask
+playsound
+werkzeug
