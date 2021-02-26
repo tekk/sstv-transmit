@@ -15,7 +15,7 @@
 			</div>
 
 			<div class="dropzone">
-				<img id="img-upload" src="static/upload.svg" class="upload-icon" width="50px" />
+				<img id="img-upload" src="static/upload.svg" class="upload-icon" width="50px" height="38px" />
 				<input type="file" class="upload-input" id="imgInp" name="file" />
 			</div>
 
@@ -24,19 +24,8 @@
 		</div>
 	</div>
 </form>
-<!-- NO JS ADDED YET -->
-<!-- partial -->
   <script src='static/jquery.min.js'></script>
-  <script  src="script.js"></script>
-
   <script type="text/javascript">
-
-	$('input[type=file]').change(function () {
-	console.log("file changed event");
-	var filePath = $(this).val();
-	console.log("filepath---->"+filePath);
-	//alert($('input[type=file]').val());
-	});
 	
 	$(document).ready( function() {
 			
@@ -56,16 +45,8 @@
 			$("#imgInp").change(function(){
 			 readURL(this);
 			});
-
-			$("#uploadbutton").click(function(){
-				alert("Transmit will begin. Please wait 36 seconds.");
-			});
-		});
-	
-	
+		});	
 	</script>
-	
-
 </body>
 </html>
 
